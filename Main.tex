@@ -1,0 +1,70 @@
+\documentclass[
+%11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+%singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{scrartcl} % The class file specifying the document structure
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage{hyperref} % Working URL links
+\usepackage[toc,page]{appendix} % Table of contents, etc.
+
+\usepackage{graphicx, graphbox, subcaption} % Images
+\graphicspath{ {./images/} }
+
+\usepackage{biblatex}
+\usepackage{siunitx, booktabs}
+
+\usepackage{todonotes}
+
+\begin{document}
+\begin{titlepage}
+\title{Exploration and Presentation Exam Paper}
+\author{Frederik Blem - cph-fb114@cphbusiness.dk\\
+Simon Schønberg Bojesen - cph-sb339@cphbusiness.dk}
+\subtitle{}
+\maketitle
+\begin{center}
+    \large
+        Copenhagen Business Academy\\
+        Supervisor: Dr. Super Visor\\
+        Examiner: Mr. Exam Miner
+\end{center}
+
+\thispagestyle{empty}
+
+\end{titlepage}
+\clearpage
+
+\pagenumbering{arabic}
+\Large
+    \textbf{Abstract}
+    \begin{abstract}
+        \label{sec:abstract}
+        This is where an abstract will be in 4 sentences! What is the problem? Why is the problem interesting? What is the solution? 
+        What are the implications of the solution?
+    \end{abstract}
+\normalsize  
+\clearpage
+
+\tableofcontents % Prints the main table of contents
+
+\listoffigures % Prints the list of figures
+
+\listoftables % Prints the list of tables
+\clearpage
+
+\input{sections/introduction.tex}
+
+\input{sections/section1.tex}
+
+\end{document}
