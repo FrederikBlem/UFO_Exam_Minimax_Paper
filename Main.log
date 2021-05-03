@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  3 MAY 2021 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  3 MAY 2021 16:18
 entering extended mode
 **d:/SOFTSchool/UFO/ExamAssignment/Main.tex
 (d:/SOFTSchool/UFO/ExamAssignment/Main.tex
@@ -980,7 +980,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {C:/Users/Dende/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 \clearpage
+l.58 \clearpage
                 [1
 
 ] (d:/SOFTSchool\UFO\ExamAssignment\Main.toc)
@@ -997,11 +997,13 @@ l.57 \clearpage
 
  [2
 
-] (d:/SOFTSchool\UFO\ExamAssignment\sections/introduction.tex
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 5.
- [3
+] (d:/SOFTSchool\UFO\ExamAssignment\sections/introduction.tex [3
 
-]) (d:/SOFTSchool\UFO\ExamAssignment\sections/section1.tex) [4
+]) (d:/SOFTSchool\UFO\ExamAssignment\sections/MinimaxAlgorithm.tex [4
+
+]) (d:/SOFTSchool\UFO\ExamAssignment\sections/AlphaBetaPruning.tex [5
+
+]) (d:/SOFTSchool\UFO\ExamAssignment\sections/conclusion.tex) [6
 
 ] (d:/SOFTSchool\UFO\ExamAssignment\Main.aux)
 Package rerunfilecheck Info: File `Main.out' has not changed.
@@ -1011,17 +1013,17 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30293 strings out of 479618
- 632301 string characters out of 2865026
- 1426227 words of memory out of 3000000
- 46977 multiletter control sequences out of 15000+200000
- 412044 words of font info for 58 fonts, out of 3000000 for 9000
+ 30227 strings out of 479618
+ 631068 string characters out of 2865026
+ 1425520 words of memory out of 3000000
+ 46898 multiletter control sequences out of 15000+200000
+ 411689 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,9n,116p,10632b,992s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Dende\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on d:/SOFTSchool\UFO\ExamAssignment\Main.pdf (5 pages, 87899 bytes).
+ 111i,7n,116p,10632b,806s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on d:/SOFTSchool\UFO\ExamAssignment\Main.pdf (7 pages, 78854 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
