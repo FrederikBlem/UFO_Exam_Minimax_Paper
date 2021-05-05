@@ -10,5 +10,6 @@
 \contentsline {subsection}{\numberline {3.1}Introduction to Alpha/Beta Pruning}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Explanation of Alpha/Beta Pruning}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Implementation of Alpha/Beta Pruning}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Assignment Code Listings}{8}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Conclusion}{9}{section.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
