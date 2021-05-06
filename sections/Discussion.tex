@@ -1,0 +1,20 @@
+\section{Discussion} 
+\label{sec:Discussion}
+
+\subsection{Compare results}
+This subsection will be used to show the results of the pruning.
+
+In the notebook without pruning (V3) on turn 1 the AI considered 549945 different moves.
+In the notebook with pruning (V4) on turn 1 the AI considered 30709 different moves.
+
+This means that on turn one we managed to prune away around 93\% of the moves it would consider without pruning.
+
+On turn 3 this went from 7331 down to 1519 which is again a significant decrease of around 80\%
+These prunings of course become less and less as the game has less possible moves, and at turn 7 it would no longer prune anything. 
+
+These findings can be seen better by running files \href{code/TicTacToe_MinimaxV3.ipynb}{MinimaxV3.ipynb} and \href{code/TicTacToe_MinimaxV4.ipynb}{MinimaxV4.ipynb} in the code folder of this project.
+
+\subsection{Reflection}
+
+\subsection{Conclusion}
+

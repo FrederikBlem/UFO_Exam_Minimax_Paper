@@ -45,23 +45,53 @@ in figure \ref{fig:AlphaBetaPruningA}.
     \end{subfigure}
   \end{figure}
 
-  Alpha Beta Pruning can potentially prune a lot of branches and 
-  thus make the examination of choices or moves through Minimax considerably faster 
-  than if it simply went through every single branch.
+Alpha Beta Pruning can potentially prune a lot of branches and 
+thus make the examination of choices or moves through Minimax considerably faster 
+than if it simply went through every single branch.
 
 \subsection{Implementation of Alpha/Beta Pruning}
 \label{subsec:Implementation of Alpha/Beta Pruning}
-% Show our new code!
-\subsection{Assignment Code Listings}
-        \begin{lstlisting}[language={[Sharp]C}, caption={C\# example}, label={Script}]
-            //Prints Hello World.
-            class Program
-            {
-              public static void Main()
-              {
-                System.Console.WriteLine("Hello World!");
-              }
-            }
-        \end{lstlisting}
 
+In this section we will show you our changes to the minimax function and more, which we added to better see the results of the pruning. 
+First thing we did was to add a counter to the minimax function. We did this to both V3 and V4 versions of the code. This counter increments every time we look at a new future move. 
+The idea was to show a count of how many moves the AI had considered before making the most rational choice. This way we could compare the number of considered moves on both versions of the code:
+one without pruning and one where we implemented it.
+
+\begin{lstlisting}[language=python, caption={python example}, label={Script}, basicstyle=\ttfamily\small]
+    def minimax(board, depth, alpha, beta, isMax):
+        global count 
+        score = evaluate(board)
+        count += 1
+        if score == 10: 
+            return score
+        if score == -10:
+            return score
+        if board.count(EMPTY) == 0:
+            return 0
+        
+        if isMax:
+            maxEval = float('-inf')
+            for move in all_possible_moves(board, AI):
+                evaluation = minimax(move, depth + 1, alpha, beta, not isMax)
+                maxEval = max(maxEval, evaluation)
+                alpha = max(alpha, evaluation)
+                if beta <= alpha:
+                    break
+            return maxEval
+        else:
+            minEval = float('inf')
+            for move in all_possible_moves(board, HUMAN):
+                evaluation = minimax(move, depth + 1, alpha, beta, not isMax)
+                minEval = min(minEval, evaluation)
+                beta = min(beta, evaluation)
+                if beta <= alpha:
+                    break
+            return minEval
+\end{lstlisting}
+
+To implement Alpha Beta Pruning we had to add 2 more parameters to the function: alpha and beta. These start with values -infinity and infinity.
+The recursive call was then updated to have include arguments. For the maximizer we set the alpha value to whichever is greater between the current alpha value and the evaluation.
+Likewise it is done for the minimizer between which is lesser of beta's current value and the evaluation. This means that every time the minimax function is run, we update the alpha value if it is the maximizing players turn. 
+Likewise we update the beta value on the minimizing players turn.
+No matter whose turn it is we check to see if beta is less then or equal to alpha, and if this is true, we prune the rest of the moves.
 \clearpage

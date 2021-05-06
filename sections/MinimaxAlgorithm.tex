@@ -19,7 +19,11 @@ This simply means that the algorithm always expects the minimizer to pick the mo
 Here is an example: Let us say the maximizer is the human player and the minimizer is the AI player in this scenario.\\
 
 Look at this Tic-Tac-Toe board:\\
-\includegraphics[width=\textwidth]{89-137-4480.jpg}\\
+\begin{figure}
+    \includegraphics[width=\textwidth]{89-137-4480.jpg}\\
+    \label{fig:Board Example}
+\end{figure}
+
 In this scenario the AI player goes first as “X” and tries to figure out the most rational move of the 9 moves possible. 
 It does this by predicting what the opposing player, maximizer would then do on his next move and so on until it has found the fastest way to win for that one move. 
 Basically, the algorithm runs a simulated game on each of the current board’s possible moves, against the maximizer, 
@@ -27,7 +31,11 @@ and when it is done with one move it backtracks back to the current board with t
 When it has simulated how to win by all the possible moves it will then make the move that will help it win the fastest.\\
 
 Let us see another example:\\
-\includegraphics[width=\textwidth]{1920px-Minimax.svg.png}\\
+\begin{figure}
+    \includegraphics[width=\textwidth]{1920px-Minimax.svg.png}\\
+    \label{fig:Tree Example}
+\end{figure}
+
 If you look at the tree above it shows an example of how the minimax works. In this scenario the maximizer goes first, and he has 2 possible moves. 
 He would therefore explore the first move first, marked -10. At this point the algorithm has not simulated this move yet and therefore does not know that value yet. 
 So first he just tries the moves leftmost in the tree until he hits the depth 4 which is the bottom in this scenario. He would end up with a value of 10 which would be good for the maximizer. 
@@ -41,5 +49,63 @@ The algorithm then does the same thing for the other move and finds that this mo
 \subsection{Implementation of Minimax}
 \label{subsec:Implementation of Minimax}
 % Show our own code!
+\begin{lstlisting}[language=python, caption={python example}, label={Script}, basicstyle=\ttfamily\small]
+    # AI makes a move based on minmax algorithmic search for the most rational move to make
+    def ai_move(board):
+        best_move = board
+        best_value = float('-inf')
+        for move in all_possible_moves(board, AI):
+            #print(move)
+            move_val = minimax(move, 0, False)
+            #print(move_val)
+            if move_val > best_value or best_value == None:
+                best_move = move
+                best_value = move_val
+        return best_move
+\end{lstlisting}
 
+The function ai\textunderscore move gets called when its the AI's turn to play. The function generates a list of all possible moves from the current board, 
+which the function recieves from the arguments.
+We then iterate over this list, to run the minimax recursion on each of these possible moves.
+When we get the result move\textunderscore val back for the current move, we check to see if this value is higher or equal to the stored best\textunderscore value. 
+If it is, we then override that stored value with the new best value.
+
+\begin{lstlisting}[language=python, caption={python example}, label={Script}, basicstyle=\ttfamily\small]
+    def minimax(board, depth, isMax):
+    score = evaluate(board)
+    
+    if score == 10: 
+        return score
+    if score == -10:
+        return score
+    if board.count(EMPTY) == 0:
+        return 0
+
+    if isMax:
+        best = float('-inf')
+        for move in all_possible_moves(board, AI):
+            best = max(best, minimax(move, depth + 1, not isMax))
+        return best
+    else:
+        best = float('inf')
+        for move in all_possible_moves(board, HUMAN):
+            best = min(best, minimax(move, depth + 1, not isMax))
+        return best
+\end{lstlisting}
+
+This is the implementation made in Simon's Original Jupyter Notebook. 
+The function always start by checking the board with another function called evaluate. 
+This function checks for win conditions and returns either 10 if the AI has a winning board and likewise -10 for the Human player.
+If noone has won yet it returns 0.
+
+Next we check the score we get back, to find out if we should end the recursion for this move. We do this if the score is -10, 10 or 0, 
+and as you can image the move will not be considered as best 
+if the score is -10 as the AI does not want the human player to win.
+
+The next part of the implementation is the interesting part. First we check to see if the current simulated move is the maximizer (Human) or the minimizer (AI). 
+Depending on the result of this if we set up the recursion quite oppositely. As can be seen we start a "best" variable at the worst value for the player.
+-infinity for the maximizer and infinity for the minimizer. We do this to ensure that there is a value to overwrite on the very first run of the algorithm.
+We then create a list of possible for this current simulated board, and iterates over it. This is where the recursion happens.
+We call the minimax function within it self on the current move of the list. This ensures that we hit all possible moves for this new current board as well, 
+because every time the function returns "best" it backtracks to check the next move. Remember the tree example explained in \ref{fig:Tree Example}.
 \clearpage
