@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  7 MAY 2021 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  7 MAY 2021 10:34
 entering extended mode
 **d:/SOFTSchool/UFO/ExamAssignment/Main.tex
 (d:/SOFTSchool/UFO/ExamAssignment/Main.tex
@@ -1318,20 +1318,21 @@ Package xcolor Warning: Incompatible color definition on input line 96.
 Package xcolor Warning: Incompatible color definition on input line 97.
 
 [6] [7]) (d:/SOFTSchool\UFO\ExamAssignment\sections/AlphaBetaPruning.tex
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 13.
 <./images//AlphaBetaPruning1.png, id=140, 204.765pt x 106.89937pt>
 File: ./images//AlphaBetaPruning1.png Graphic file (type png)
 <use ./images//AlphaBetaPruning1.png>
-Package pdftex.def Info: ./images//AlphaBetaPruning1.png  used on input line 21.
+Package pdftex.def Info: ./images//AlphaBetaPruning1.png  used on input line 19.
 (pdftex.def)             Requested size: 125.47794pt x 65.50864pt.
 <./images//AlphaBetaPruning2.png, id=141, 205.5178pt x 108.405pt>
 File: ./images//AlphaBetaPruning2.png Graphic file (type png)
 <use ./images//AlphaBetaPruning2.png>
-Package pdftex.def Info: ./images//AlphaBetaPruning2.png  used on input line 24.
+Package pdftex.def Info: ./images//AlphaBetaPruning2.png  used on input line 23.
 (pdftex.def)             Requested size: 125.47794pt x 66.1865pt.
 <./images//AlphaBetaPruning3.png, id=144, 205.5178pt x 109.91063pt>
 File: ./images//AlphaBetaPruning3.png Graphic file (type png)
 <use ./images//AlphaBetaPruning3.png>
-Package pdftex.def Info: ./images//AlphaBetaPruning3.png  used on input line 41.
+Package pdftex.def Info: ./images//AlphaBetaPruning3.png  used on input line 40.
 (pdftex.def)             Requested size: 125.47794pt x 67.10574pt.
 <./images//AlphaBetaPruning4.png, id=145, 219.82124pt x 152.82094pt>
 File: ./images//AlphaBetaPruning4.png Graphic file (type png)
@@ -1342,16 +1343,10 @@ Package pdftex.def Info: ./images//AlphaBetaPruning4.png  used on input line 44.
 
  <./images//AlphaBetaPruning1.png> <./images//AlphaBetaPruning2.png> <./images//AlphaBetaPruning3.png> <./images//AlphaBetaPruning4.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 61.
+Package xcolor Warning: Incompatible color definition on input line 63.
 
 
-Package xcolor Warning: Incompatible color definition on input line 62.
-
-
-Package xcolor Warning: Incompatible color definition on input line 65.
-
-
-Package xcolor Warning: Incompatible color definition on input line 66.
+Package xcolor Warning: Incompatible color definition on input line 64.
 
 
 Package xcolor Warning: Incompatible color definition on input line 67.
@@ -1366,31 +1361,31 @@ Package xcolor Warning: Incompatible color definition on input line 69.
 Package xcolor Warning: Incompatible color definition on input line 70.
 
 
+Package xcolor Warning: Incompatible color definition on input line 71.
+
+
 Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 73.
-
-
-Package xcolor Warning: Incompatible color definition on input line 73.
-
-
-Package xcolor Warning: Incompatible color definition on input line 73.
-
-
-Package xcolor Warning: Incompatible color definition on input line 73.
-
-
-Package xcolor Warning: Incompatible color definition on input line 73.
-
-
-Package xcolor Warning: Incompatible color definition on input line 74.
 
 
 Package xcolor Warning: Incompatible color definition on input line 74.
 
 
 Package xcolor Warning: Incompatible color definition on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 
 Package xcolor Warning: Incompatible color definition on input line 76.
@@ -1414,22 +1409,22 @@ Package xcolor Warning: Incompatible color definition on input line 81.
 Package xcolor Warning: Incompatible color definition on input line 82.
 
 
-Package xcolor Warning: Incompatible color definition on input line 82.
-
-
-Package xcolor Warning: Incompatible color definition on input line 82.
-
-
-Package xcolor Warning: Incompatible color definition on input line 82.
-
-
-Package xcolor Warning: Incompatible color definition on input line 83.
-
-
 Package xcolor Warning: Incompatible color definition on input line 83.
 
 
 Package xcolor Warning: Incompatible color definition on input line 84.
+
+
+Package xcolor Warning: Incompatible color definition on input line 84.
+
+
+Package xcolor Warning: Incompatible color definition on input line 84.
+
+
+Package xcolor Warning: Incompatible color definition on input line 84.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
 
 
 Package xcolor Warning: Incompatible color definition on input line 85.
@@ -1445,6 +1440,12 @@ Package xcolor Warning: Incompatible color definition on input line 88.
 
 
 Package xcolor Warning: Incompatible color definition on input line 89.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
 
 [9] [10]) (d:/SOFTSchool\UFO\ExamAssignment\sections/Discussion.tex
 Overfull \hbox (6.66585pt too wide) in paragraph at lines 5--13
@@ -1464,17 +1465,17 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32178 strings out of 479618
- 657941 string characters out of 2865026
- 1518362 words of memory out of 3000000
- 48749 multiletter control sequences out of 15000+200000
+ 32282 strings out of 479618
+ 660336 string characters out of 2865026
+ 1518514 words of memory out of 3000000
+ 48852 multiletter control sequences out of 15000+200000
  411689 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,9n,116p,10632b,2453s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Users/Dende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on d:/SOFTSchool\UFO\ExamAssignment\Main.pdf (12 pages, 821247 bytes).
+Output written on d:/SOFTSchool\UFO\ExamAssignment\Main.pdf (12 pages, 822088 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
  251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
