@@ -1174,7 +1174,6 @@ INPUT .\images\\1920px-Minimax.svg.png
 INPUT .\images\\1920px-Minimax.svg.png
 INPUT .\images\\1920px-Minimax.svg.png
 INPUT .\images\\1920px-Minimax.svg.png
-INPUT D:\Users\Dende\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT d:\SOFTSchool\UFO\ExamAssignment\sections\AlphaBetaPruning.tex
 INPUT d:\SOFTSchool\UFO\ExamAssignment\sections\AlphaBetaPruning.tex
 INPUT d:\SOFTSchool\UFO\ExamAssignment\sections\AlphaBetaPruning.tex
@@ -1216,8 +1215,6 @@ INPUT d:\SOFTSchool\UFO\ExamAssignment\Main.out
 INPUT d:\SOFTSchool\UFO\ExamAssignment\Main.out
 INPUT d:\SOFTSchool\UFO\ExamAssignment\Main.run.xml
 OUTPUT d:\SOFTSchool\UFO\ExamAssignment\Main.run.xml
-INPUT D:\Users\Dende\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT D:\Users\Dende\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT D:\Users\Dende\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Users\Dende\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Users\Dende\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
