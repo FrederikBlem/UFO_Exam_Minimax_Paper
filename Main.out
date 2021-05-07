@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Minimax Algorithm}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Introduction to Minimax}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Explanation of Minimax}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{About Minimax}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Why is it called Minimax}{subsection.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Implementation of Minimax}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Alpha/Beta Pruning}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Introduction to Alpha/Beta Pruning}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Explanation of Alpha/Beta Pruning}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Implementation of Alpha/Beta Pruning}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Discussion}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Compare results}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Conclusion}{section.4}% 14

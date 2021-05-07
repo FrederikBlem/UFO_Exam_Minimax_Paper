@@ -12,7 +12,7 @@ english, % ngerman for German
 headsepline, % Uncomment to get a line under the header
 %chapterinoneline, % Uncomment to place the chapter title next to the number on one line
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
-]{scrartcl} % The class file specifying the document structure
+]{article} % The class file specifying the document structure
 
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage{hyperref} % Working URL links
@@ -52,43 +52,38 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{todonotes}
 
 \begin{document}
-\begin{titlepage}
-\title{Minimax and Alpha/Beta Pruning for Tic-Tac-Toe}
-\author{Frederik Blem - cph-fb114@cphbusiness.dk\\
-Simon Schønberg Bojesen - cph-sb339@cphbusiness.dk}
-\subtitle{}
-\maketitle
 \begin{center}
+    \Large 
+        \textbf{Minimax and Alpha/Beta Pruning for Tic-Tac-Toe}\\
+    \normalsize
+
+    Frederik Blem - cph-fb114@cphbusiness.dk\\
+    Simon Schønberg Bojesen - cph-sb339@cphbusiness.dk\\
+
     \large
         Copenhagen Business Academy\\
         Supervisor: Martin Vestergaard\\
         %Examiner: Mr. Exam Miner
     \normalsize
 \end{center}
-
 \thispagestyle{empty}
-
-\end{titlepage}
+\textbf{Abstract}
+\begin{abstract}
+    \label{sec:abstract}
+    The problem with the Minimax algorithm is that it spends too much time evaluating moves that are worse than already considered moves.
+    %say why it is interesting
+    It is interesting to resolve this for improving the performance of games with many possible moves.
+    %say what your solution achieves
+    This solution presents an implementation of Alpha Beta Pruning which drastically reduced the amount of considered moves in the Minimax algorithm.
+    %say what follows from your solution
+    From the solution the conclusion is that Alpha Beta Pruning could significantly improve performance in games that require many moves to win.
+\end{abstract} 
 %\clearpage
-
-\pagenumbering{arabic}
-\large
-    \textbf{Abstract}
-    \begin{abstract}
-        \label{sec:abstract}
-        This is where an abstract will be in 4 sentences! What is the problem? Why is the problem interesting? What is the solution? 
-        What are the implications of the solution?
-    \end{abstract}
-\normalsize  
-%\clearpage
-
 \tableofcontents % Prints the main table of contents
-
 %\listoffigures % Prints the list of figures
-
 %\listoftables % Prints the list of tables
 \clearpage
-
+\pagenumbering{arabic}
 \input{sections/Introduction.tex}
 
 \input{sections/MinimaxAlgorithm.tex}

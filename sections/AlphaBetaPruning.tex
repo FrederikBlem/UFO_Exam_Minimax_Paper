@@ -10,9 +10,9 @@ This happens by stopping consideration of possible moves, that will never be bet
 \label{subsec:Explanation of Alpha/Beta Pruning}
 Alpha Beta Pruning is an optimization method for the Minimax algorithm that eliminates branches or entire subtrees. 
 It is so named because it introduces the two variables or values Alpha and Beta into the Minimax algorithm.
-The variable Alpha is set to be the biggest value the Maximizer can guarantee at the current level being explored or above it. \todo{Change to quote Geeksforgeeks}
-The variable Beta is likewise set to be the smallest value the Minimizer can guarantee.
-
+According to Akshay L Aradhya who wrote \href{https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-4-alpha-beta-pruning/}{this article}:
+"Alpha is the best value that the maximizer currently can guarantee at that level or above.
+Beta is the best value that the minimizer currently can guarantee at that level or above."
 \begin{figure}
     \centering % Centering requirement met
     \begin{subfigure}[b]{0.3\textwidth}
@@ -25,15 +25,13 @@ The variable Beta is likewise set to be the smallest value the Minimizer can gua
     \caption{An example of Alpha Beta Pruning.} % Caption beneath both of the images.
     \label{fig:AlphaBetaPruningA}
   \end{figure}
-
-Figure \ref{fig:AlphaBetaPruningA} shows how first the leftmost branches are explored 
+Figure \ref{fig:AlphaBetaPruningA}  shows how first the leftmost branches are explored 
 and the minimizer picks “7” which is stored in the variable Alpha. 
 After that the second leftmost branch is explored and the Minimizer is presented with a choice that is smaller than 7.
 Given that there is a choice smaller than Alpha present already, and it is the Minimizer’s turn to choose, 
 meaning that it will undoubtedly have a chance to pick a value smaller than Alpha, 
 it would not be worth it for the Maximizer to explore the rest of the branch and the branch is pruned as seen 
 in figure \ref{fig:AlphaBetaPruningA}.
-
 \begin{figure}[!t]
     \centering % Centering requirement met
     \begin{subfigure}[t]{0.3\textwidth}
@@ -46,19 +44,15 @@ in figure \ref{fig:AlphaBetaPruningA}.
     \caption{An example of many branches being pruned.} % Caption beneath both of the images.
     \label{fig:AlphaBetaPruningB}
   \end{figure}
-
 Alpha Beta Pruning can potentially prune a lot of branches and 
 thus make the examination of choices or moves through Minimax considerably faster 
 than if it simply went through every single branch as seen in figure~\ref{fig:AlphaBetaPruningB}.
-
 \subsection{Implementation of Alpha/Beta Pruning}
 \label{subsec:Implementation of Alpha/Beta Pruning}
-
 This section shows the changes to the minimax function and more, which was added to version 3 of the notebook in the code folder. This was done to better see the results of the pruning. 
 First thing that was done was to add a counter to the minimax function in both version 3 and 4 of the code. This counter increments every time a new future move is considered. 
 The idea was to show a count of how many moves the AI had considered before making the most rational choice. This way the number of considered moves on both versions of the code could be compared:
 one before implementing pruning and one after.
-
 \begin{lstlisting}[language=python, caption={python example}, label={Script}, basicstyle=\ttfamily\small]
     def minimax(board, depth, alpha, beta, isMax):
         global count 
@@ -90,7 +84,6 @@ one before implementing pruning and one after.
                     break
             return minEval
 \end{lstlisting}
-
 To implement Alpha Beta Pruning 2 more parameters had to be added to the function: alpha and beta. These start with the values -infinity and infinity.
 The recursive call was then updated to have these arguments included. For the maximizer the alpha value was set to whichever is greater between the current alpha value and the evaluation.
 Likewise it is done for the minimizer between which is lesser of beta's current value and the evaluation. This means that every time the minimax function is run, the alpha value is updated if it is the maximizing players turn. 

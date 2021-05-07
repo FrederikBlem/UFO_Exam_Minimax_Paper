@@ -1,16 +1,29 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}Minimax Algorithm}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Introduction to Minimax}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Explanation of Minimax}{3}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}About Minimax}{3}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Why is it called Minimax}{3}{subsubsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Minimax Algorithm}{2}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Introduction to Minimax}{2}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Explanation of Minimax}{2}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}About Minimax}{2}{subsubsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Why is it called Minimax}{2}{subsubsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Implementation of Minimax}{5}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Alpha/Beta Pruning}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Introduction to Alpha/Beta Pruning}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Explanation of Alpha/Beta Pruning}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Implementation of Alpha/Beta Pruning}{9}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Discussion}{11}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Compare results}{11}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Conclusion}{11}{subsection.4.2}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Alpha/Beta Pruning}{7}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Introduction to Alpha/Beta Pruning}{7}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Explanation of Alpha/Beta Pruning}{7}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Implementation of Alpha/Beta Pruning}{8}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Discussion}{10}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Compare results}{10}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Conclusion}{10}{subsection.4.2}%
