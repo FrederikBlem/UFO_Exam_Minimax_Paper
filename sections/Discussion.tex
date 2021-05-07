@@ -5,23 +5,24 @@
 This subsection will be used to show the results of the pruning.\\
 In the notebook without pruning (V3) on turn 1 the AI considered 549945 different moves.
 In the notebook with pruning (V4) on turn 1 the AI considered 30709 different moves.\\
-This means that on turn one we managed to prune away around 93\% of the moves it would consider without pruning.\\
-On turn 3 this went from 7331 down to 1519 which is again a significant decrease of around 80\%
-These prunings of course become less and less as the game has less possible moves, and at turn 7 it would no longer prune anything.\\
+This means that on turn one V4 managed to prune away around 93\% of the moves that would be considered without pruning.\\
+On turn 3 this went from 7331 down to 1519 which is again a significant decrease of around 80\%.
+These prunings of course become smaller in number as the game had fewer possible moves, and at turn 7 it would no longer prune anything.\\
 These findings can be seen better by running files \href{code/TicTacToe_MinimaxV3.ipynb}{MinimaxV3.ipynb} 
 and \href{code/TicTacToe_MinimaxV4.ipynb}{MinimaxV4.ipynb} in the code folder of this project.
 
 %\subsection{Reflection}
 \subsection{Conclusion}
 %Brief summary:What  has  been  done  and  the  benefits  of  it. Recommendation for future extensions and upgrades. Reflection on the work and the product.
-The Jupyter Notebook TicTacToe\textunderscore MinimaxV4.ipynb is the result of our implementation of 
-Alpha Beta Pruning that we compared with the original notebook.
+The Jupyter Notebook TicTacToe\textunderscore MinimaxV4.ipynb is the result of the implementation of 
+Alpha Beta Pruning that was compared with the original notebook.
 Version 4 has significantly fewer considered moves, presumably resulting in a slightly faster game 
-for our implementation of Tic-Tac-Toe.
+for this implementation of Tic-Tac-Toe.
 If implemented on a game like chess, which requires the algorithm to check many more moves per depth, 
-pruning would likely save an unbelievable amount of time compared to the bare minimax function.\\
-Future implementations, that would be interesting to test Alpha Beta Pruning on, could include: input validation, Multiplayer (humans), AI versus AI games, allowing for picking X or O, 
-a choice of board size and potentially different games.\\
+pruning would likely save an considerable amount of time compared to the bare minimax function.\\
+Future implementations, that would be interesting to include, could be: input validation, Multiplayer (humans), AI versus AI games, allowing for picking X or O, 
+a choice of board size and potentially different games. Of those it would be relevant to test Alpha Beta Pruning on future versions 
+with allowing for picking X or O and on different board sizes.\\
 % Reflection: what went well, what could be better
 For a small project like this, simply comparing the amount of considered moves between notebook versions has worked well.
-On the other hand, we could have compared using more precise tools to test efficiency and impact of Alpha Beta Pruning.
+On the other hand, more precise tools could have been used to compare and to test efficiency and impact of Alpha Beta Pruning.
