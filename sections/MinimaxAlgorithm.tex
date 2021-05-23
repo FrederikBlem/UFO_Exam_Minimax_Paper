@@ -18,7 +18,7 @@ The idea behind minimax is that the algorithm expects the game to be a turn-base
 This simply means that the algorithm always expects the minimizer to pick the move with the lowest score, and the maximizer to do the opposite. 
 Here is an example: Here the maximizer is the human player and the minimizer is the AI player in this scenario.\\
 \begin{figure}
-    \caption{An example of a Tic-Tac-Toe board}
+    \caption{An example of a Tic-Tac-Toe board. [\ref{bib:Tic-Tac-ToeBoard}]}
     \includegraphics[width=\textwidth]{89-137-4480.jpg}
     \label{fig:Board Example}
 \end{figure}\\
@@ -30,7 +30,7 @@ and when it is done with one move it backtracks back to the current board with t
 When it has simulated how to win by all the possible moves it will then make the move that will help it win the fastest.\\\\
 Consider again another example in figure~\ref{fig:Tree Example}.\\
 \begin{figure}
-    \caption{Minimax Tree Example}
+    \caption{Minimax Tree Example. [\ref{bib:MinimaxTreeExample}]}
     \includegraphics[width=\textwidth]{1920px-Minimax.svg.png}
     \label{fig:Tree Example}
 \end{figure}\\
@@ -43,7 +43,7 @@ As is seen this route only gives both players one choice on each of their respec
 The last move has a -10 score so it backtracks with that score once again and ends up with 10 and -10 on the 2 moves the minimizer can make. 
 If the maximizer chooses this route the point value of the move would therefore be -10 as the minimizer always goes for the lesser score.\\
 The algorithm then does the same thing for the other branch of moves and finds that this move will serve the maximizer better as it will yield -7 move value which is still poor for the maximizer but less so than a -10 score.\\\\
-The explanition written here is based on \href{https://www.youtube.com/watch?v=l-hh51ncgDI}{this video} from 0:00 to 2:30.
+The explanation written here is based on \href{https://www.youtube.com/watch?v=l-hh51ncgDI}{this video from 0:00 to 2:30}.[\ref{bib:MinimaxVideo}]
 \clearpage
 \subsection{Implementation of Minimax}
 \label{subsec:Implementation of Minimax}
@@ -102,5 +102,5 @@ Depending on the result of this the recursion is set up oppositely. A "best" var
 A list of possible moves is then created for this current simulated board and iterated over. This is where the recursion happens.
 The minimax function is called within it self on the current considered move of the list. This ensures that all possible moves are evaluated for this new current board as well, 
 because every time the function returns "best" it backtracks to check the next move. Remember the tree example explained in figure~\ref{fig:Tree Example}.\\\\
-The implementation described here is based on the pseudo code explained in \href{https://www.youtube.com/watch?v=l-hh51ncgDI}{this video} from 2:30 to 5:20.
+The implementation described here is based on the pseudo code explained in \href{https://www.youtube.com/watch?v=l-hh51ncgDI}{this video} from 2:30 to 5:20.[\ref{bib:MinimaxVideo}]
 \clearpage
