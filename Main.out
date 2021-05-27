@@ -11,4 +11,5 @@
 \BOOKMARK [2][-]{subsection.3.3}{Implementation of Alpha/Beta Pruning}{section.3}% 11
 \BOOKMARK [1][-]{section.4}{Discussion}{}% 12
 \BOOKMARK [2][-]{subsection.4.1}{Compare results}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Conclusion}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Alternatives to Minimax with Alpha Beta Pruning}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Conclusion}{section.4}% 15

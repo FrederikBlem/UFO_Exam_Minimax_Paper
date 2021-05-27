@@ -10,13 +10,13 @@ to make the AI player consider all possible moves and choose the most rational o
 \label{subsec:Explanation of Minimax}
 \subsubsection{About Minimax}
 First, it is important to understand the meaning behind recursive code. 
-When code is recursive, it for example means that it's a function that calls itself with updated arguments until it reaches some condition the function wants to return. 
+When code is recursive, it means that it's a function that calls itself with updated arguments until it reaches some condition the function wants to return. 
 In the Minimax algorithm, the function is made to call itself in order to keep looking at more possible future moves, 
 and ultimately decides which move is the best move to make on the AI’s current board.
 \subsubsection{Why is it called Minimax}
 The idea behind minimax is that the algorithm expects the game to be a turn-based 2-player game, and the algorithm defines these 2 players as the minimizer and the maximizer. 
 This simply means that the algorithm always expects the minimizer to pick the move with the lowest score, and the maximizer to do the opposite. 
-Here is an example: Here the maximizer is the human player and the minimizer is the AI player in this scenario.\\
+Here is an example: in this scenario the maximizer is the human player and the minimizer is the AI player.\\
 \begin{figure}
     \caption{An example of a Tic-Tac-Toe board. [\ref{bib:Tic-Tac-ToeBoard}]}
     \includegraphics[width=\textwidth]{89-137-4480.jpg}
@@ -37,9 +37,10 @@ Consider again another example in figure~\ref{fig:Tree Example}.\\
 The Minimax tree shows an example of how the minimax works. In this scenario the maximizer goes first, and has 2 possible moves. 
 The maximizer would therefore explore the first move first, marked -10. At this point the algorithm has not simulated this move yet and therefore does not know that value yet. 
 So first it just tries the moves leftmost in the tree until it hits the depth 4 which is the bottom in this scenario. It would end up with a value of 10 which would be good for the maximizer. 
-However, the minimizer needs to be taken into account, so the maximizer backtracks once to see the other move which is +infinity. 
-It is guaranteed, that the minimizer would never pick that route, which means the score 10 can be kept in mind while the maximizer backtracks to the next point where the minimizer has a move. 
-As is seen this route only gives both players one choice on each of their respective turns. 
+However, the minimizer needs to be taken into account, so the algorithm backtracks once to see the other move which is +infinity. 
+It is guaranteed, that the minimizer would never pick that route, which means the score 10 can be kept in mind while the algorithm backtracks one more move, while still keeping the value 10 in mind.
+The next route give a static evaluation of 5 which is lower then 10 and its the maximizers turn so that would never be picked. The algorithm backtracks one more move with the value of 10.
+As is seen this next route only gives both players one choice on each of their respective turns. 
 The last move has a -10 score so it backtracks with that score once again and ends up with 10 and -10 on the 2 moves the minimizer can make. 
 If the maximizer chooses this route the point value of the move would therefore be -10 as the minimizer always goes for the lesser score.\\
 The algorithm then does the same thing for the other branch of moves and finds that this move will serve the maximizer better as it will yield -7 move value which is still poor for the maximizer but less so than a -10 score.\\\\

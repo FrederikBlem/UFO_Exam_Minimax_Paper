@@ -9,11 +9,19 @@ This means that on turn one V4 managed to prune away around 93\% of the moves th
 On turn 3 this went from 7331 down to 1519 which is again a significant decrease of around 80\%.
 These prunings of course become smaller in number as the game had fewer possible moves, and at turn 7 it would no longer prune anything.\\
 These findings can be seen better by running files \href{https://github.com/FrederikBlem/UFO_Exam_Minimax_Paper/blob/main/code/TicTacToe_MinimaxV3.ipynb}{MinimaxV3.ipynb} 
-and \href{https://github.com/FrederikBlem/UFO_Exam_Minimax_Paper/blob/main/code/TicTacToe_MinimaxV4.ipynb}{MinimaxV4.ipynb} in the code folder of this project \ref{bib:OurCode}.
+and \href{https://github.com/FrederikBlem/UFO_Exam_Minimax_Paper/blob/main/code/TicTacToe_MinimaxV4.ipynb}{MinimaxV4.ipynb} in the code folder of this project [\ref{bib:OurCode}].
 
-%\subsection{Reflection}
+\subsection{Alternatives to Minimax with Alpha Beta Pruning}
+Forward-Search Sparse Sampling-Minimax, shortened to FSSS-Minimax, 
+is an alternative that “outprunes” so-called classical Alpha-Beta Pruning according to Ari Weinstein[\ref{bib:AriWeinstein}], 
+Michael L. Littman, Sergiu Goschin in the abstract and introduction of the paper “Rollout-based Game-tree Search Outprunes Traditional Alpha-beta”[\ref{bib:ArticleFSSSMinimax}].\\
+Also mentioned is Upper Confidence Bounds applied to Testing, shortened to UCT, which is stated to be better suited for other games like Go.\\
+These discoveries were made late in the process of this paper, and were therefore not explored further.
+
 \subsection{Conclusion}
 %Brief summary:What  has  been  done  and  the  benefits  of  it. Recommendation for future extensions and upgrades. Reflection on the work and the product.
+To summarize the work done before this paper is TicTacToe\textunderscore MinimaxV3.ipynb with everything from the game to the minimax implementation.\\
+The only thing added to V3 during the process of our experiment was adding a counter to algorithm so we could compare results between the previous notebook (V3) and the new and improved notebook (V4).\\
 The Jupyter Notebook TicTacToe\textunderscore MinimaxV4.ipynb is the resulting implementation of 
 Alpha Beta Pruning that was compared with the original notebook.
 Version 4 has significantly fewer considered moves, presumably resulting in a slightly faster game 
@@ -26,4 +34,9 @@ with allowing for picking X or O and on different board sizes.\\
 % Reflection: what went well, what could be better
 For a small project like this, simply comparing the amount of considered moves between notebook versions has worked well.
 On the other hand, more precise tools could have been used to compare and to test efficiency and impact of Alpha Beta Pruning.
+Working with Minimax and Alpha Beta Pruning has shown to be very effective in terms of making an unbeatable AI, 
+but this knowledge is only applicable when doing game programming on 2 player turn-based games.\\
+On the other hand, it introduces and gives insight on tree search algorithms, which can be applied in many more cases.\\ 
+Learning about Minimax has also helped to better understand other search algorithms like breadth-first and depth-first.\\
+In future projects working with search algorithms won’t seem as daunting a task.
 \clearpage

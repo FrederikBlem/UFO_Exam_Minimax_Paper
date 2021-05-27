@@ -26,4 +26,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Compare results}{10}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Conclusion}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Alternatives to Minimax with Alpha Beta Pruning}{10}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Conclusion}{10}{subsection.4.3}%
